@@ -1,16 +1,18 @@
 .places {
-    font-size: 30px;
+    width: 100%;
     display: flex;
+    margin-top: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .places h1 {
-    margin: 0;
+    padding: 15px;
     font-size: 30px;
     width: 100%;
-    flex: 100%
-  
+    text-align: left;
+    justify-content: center;
+      
 }
 
 article {
@@ -38,7 +40,6 @@ article h2 {
     align-items: center;
     padding: 2px;
     top: 10px;
-    float: right;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -52,7 +53,10 @@ article h2 {
     border-top: 1px solid #DDDDDD;
     border-bottom: 1px solid #DDDDDD;
     display: flex;
-    margin-top: 10%;
+    font-size: 16px;
+    justify-content: center;
+    width: 100%;
+    flex-flow: row nowrap;
 }
 
 .max_guest, .number_rooms, .number_bathrooms {
@@ -61,31 +65,28 @@ article h2 {
     text-align: center;
     margin: 3px;
     justify-content: center;
-    background-position: center top;
-    flex: 1;
+   
+    display: flex;
     margin-right: 5px;
     font-size: medium;
-    margin-top: 1%;
+    flex-direction: column;
    
    
 }
 
-.max_guest  {
+.icon_guest  {
     background-image: url(../images/icon_group.png);
-    margin: auto;
     height: 50px;
     width: 50px;
 }
 
-.number_rooms  {
+.icon_bed  {
     background-image: url(../images/icon_bed.png);
-    margin: auto;
     height: 50px;
     width: 50px;
 }
-.number_bathrooms  {
+.icon_bath  {
     background-image: url(../images/icon_bath.png);
-    margin: auto;
     height: 50px;
     width: 50px;
     
@@ -93,10 +94,6 @@ article h2 {
 
 .user {
     margin: 1px auto;
-    font-size: medium;
+    padding: 20px 0;
 }
 
-.description {
-    margin: 0px;
-    font-size: medium;
-}
